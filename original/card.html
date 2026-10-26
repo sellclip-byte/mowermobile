@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MowerMobile.com Business Card | DFW Mobile Mower Service</title>
+<meta name="description" content="Save and share the MowerMobile.com business card for mobile lawn mower and small engine service in the Dallas–Fort Worth area.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#064c31">
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:#071b12;font-family:Arial,sans-serif}
+.wrap{max-width:540px;margin:auto;background:#fff;min-height:100vh}
+.cardimg{display:block;width:100%;height:auto}
+.controls{position:sticky;bottom:0;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px;background:#064c31}
+button,a.btn{border:0;border-radius:13px;padding:15px 8px;font:900 16px Arial;text-align:center;text-decoration:none;cursor:pointer}
+.share{background:#a90000;color:#ffd45a;border:2px solid #d9a928}
+.text{background:#ffd21a;color:#064c31}
+.note{padding:12px 18px 18px;text-align:center;color:#314238;font-size:14px}
+@media(min-width:700px){body{padding:24px}.wrap{border-radius:24px;overflow:hidden}}
+</style>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#075532">
+<link rel="canonical" href="https://www.mowermobile.com/card.html">
+<meta property="og:title" content="MowerMobile.com Business Card | DFW Mobile Mower Service">
+<meta property="og:description" content="Save and share the MowerMobile.com business card for mobile lawn mower and small engine service in the Dallas–Fort Worth area.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mowermobile.com/card.html">
+<meta property="og:site_name" content="MowerMobile.com">
+</head><body><main class="wrap">
+<img class="cardimg" src="business-card-mobile.png" alt="MowerMobile.com business card">
+<div class="controls">
+<a class="btn text" href="sms:8177702903?body=Service%20Request%0A%0A1.%20Address%20/%20ZIP%3A%0A2.%20Mower%20problem%20%28briefly%29%3A%0A3.%20Please%20attach%20one%20or%20more%20photos.%0A%0APlease%20send%20this%20message.">TEXT US</a>
+<button class="share" id="share">SAVE &amp; SHARE</button>
+</div>
+<div class="note">Save this business card or share it with friends, family and neighbors.</div>
+</main>
+<script>
+document.getElementById('share').addEventListener('click', async () => {
+  const data={title:'MowerMobile.com',text:'MowerMobile.com — Mobile Lawn Mower & Small Engine Service — 817-770-2903',url:location.href};
+  if(navigator.share){try{await navigator.share(data)}catch(e){}}
+  else{try{await navigator.clipboard.writeText(location.href);alert('Business card link copied.')}catch(e){alert('Use your browser Share button to save or share this card.')}}
+});
+</script></body></html>
